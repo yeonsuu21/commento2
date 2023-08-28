@@ -1,0 +1,19 @@
+.out-box{
+    border: 1px solid black;
+    width: 1000px;
+    height: 500px;
+    margin-left: 25%;
+    margin-top: 8%;
+}
+.inner-box{
+    border: 1px solid blue;
+    width: 500px;
+    height: 500px;
+    margin-left: 50%;
+}
+.login-box{
+    border: 1px solid red;
+    margin-top: 30%;
+    margin-left: 50px;
+    width: 400px;
+}
