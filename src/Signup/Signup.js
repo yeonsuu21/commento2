@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { navigate, useNavigate } from 'react-router-dom'
 import axios from "axios";
-import '../Signup/Signup.css'
+import '../Signup/Signup.css';
 
 function Signup() {
 
@@ -43,44 +43,43 @@ const navigate = useNavigate();
   
 
   return (
-    <div>
+    
       <div>
     <div className='out-box'>
-        회원가입
       <div className='inner-box'>
+        회원가입
       <div className='login-box'>
       <div>
-        <label htmlFor="input_id">ID : </label>
+        <label htmlFor="input_id"></label>
         <input
           type="text"
           name="input_id"
           value={inputId}
           onChange={handleInputId}
+          className='input-id'
+          placeholder="아이디"
         />
       </div>
       <div>
-        <label htmlFor="input_pw">PW : </label>
+        <label htmlFor="input_pw"></label>
         <input
           type="password"
           name="input_pw"
           value={inputPw}
           onChange={handleInputPw}
+          className='input-pw'
+          placeholder="비밀번호"
         />
       </div>
-    
+      <div className='button-box1'>
       <div className='button'>
         <button type='submit' onClick={handleSign}>회원가입</button>
       </div>
+</div>
+
       </div>
       </div>
     </div>
-    </div>
-    {/* {isPopupOpen && ( // 팝업이 열려 있을 때만 렌더링
-        <div className='popup'>
-          <p>회원가입이 성공적으로 이루어졌습니다!</p>
-          <button onClick={() => setIsPopupOpen(false)}>닫기</button>
-        </div>
-      )} */}
     </div>
   )
 }

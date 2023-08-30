@@ -17,14 +17,14 @@
     margin-left: 50%;
 }
 .login-box{ 
-    margin-top: 10px;
+    margin-top: 25%;
     margin-left: 50px;
     width: 400px;
 }
 .button-box{
     display: flex;
-    margin-top: 50px;
-     justify-content: space-between; /* 버튼 사이의 간격을 균등하게 분배 */
+    margin-top: 70px;
+    justify-content: space-between; /* 버튼 사이의 간격을 균등하게 분배 */
     
 }
 .input-id,.input-pw{

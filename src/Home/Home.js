@@ -44,7 +44,7 @@ function Home() {
         console.log(error, "error");
       });
   };
-  
+
   useEffect(() => {
     // 엑세스 토큰을 로컬 스토리지에서 가져오기
     const token = localStorage.getItem('accessToken');
@@ -54,10 +54,9 @@ function Home() {
       sendAccessToken(token);
     }
   }, []);
+  
   return (
-    <div>
-      홈페이지 입니다/ 슬라이더 작성하기
-    </div>
+    <div className='slider'></div>
   )
 }
 
