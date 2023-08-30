@@ -32,7 +32,7 @@ function Login() {
         console.log(res.data);
         if (res.data.token) {
           //setToken(res.data.token); 토큰 로컬스토리지에 저장할것
-          localStorage.setItem('login-token', res.data.token);
+          localStorage.setItem('accessToken', res.data.token); //키값 , value
           console.log(res.data.token);
           alert('로그인 성공 !');
           navigate("/home");
