@@ -48,30 +48,37 @@ function Login() {
     <div>
     <div className='out-box'>
       <div className='inner-box'>
+        Login
       <div className='login-box'>
       <div>
-        <label htmlFor="input_id">ID : </label>
+        <label htmlFor="input_id"></label>
         <input
           type="text"
           name="input_id"
           value={inputId}
           onChange={handleInputId}
+          className='input-id'
+          placeholder="아이디"
         />
       </div>
       <form>
-        <label htmlFor="input_pw">PW : </label>
+        <label htmlFor="input_pw"></label>
         <input
           type="password"
           name="input_pw"
           value={inputPw}
           onChange={handleInputPw}
+          className='input-pw'
+          placeholder="비밀번호"
         />
       </form>
+      <div className='button-box'>
       <div className='button'>
-        <button type='submit' onClick={handleLogin}>로그인</button>
+        <button type='submit' onClick={handleLogin}>login</button>
       </div>
       <div className='button'>
-        <button type='submit' onClick={handleSign}>회원가입</button>
+        <button type='submit' onClick={handleSign}>join</button>
+      </div>
       </div>
       </div>
       </div>
